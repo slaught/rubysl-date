@@ -1,4 +1,3 @@
-require File.expand_path('../../../spec_helper', __FILE__)
 require File.expand_path('../shared/parse', __FILE__)
 require File.expand_path('../shared/parse_us', __FILE__)
 require File.expand_path('../shared/parse_eu', __FILE__)
