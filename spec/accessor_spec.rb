@@ -1,5 +1,4 @@
 require 'date'
-require File.expand_path('../../../spec_helper', __FILE__)
 
 describe "Date#ajd" do
   it "determines the Astronomical Julian day" do
