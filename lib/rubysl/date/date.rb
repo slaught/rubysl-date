@@ -1443,8 +1443,6 @@ class Date
   def next_year(n=1) self >> n * 12 end
   def prev_year(n=1) self << n * 12 end
 
-  require 'enumerator'
-
   # Step the current date forward +step+ days at a
   # time (or backward, if +step+ is negative) until
   # we reach +limit+ (inclusive), yielding the resultant
