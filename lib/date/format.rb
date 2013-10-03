@@ -1042,7 +1042,7 @@ class Date
 	:_parse_jis, :_parse_vms, :_parse_sla, :_parse_dot,
 	:_parse_year, :_parse_mon, :_parse_mday, :_parse_ddd
 
-  def self._parse(str, comp=true, return_bag=false)
+  def self._parse(str, comp=true)
     str = str.dup
 
     e = Format::Bag.new
@@ -1105,7 +1105,6 @@ class Date
 
     e.offset ||= zone_to_diff(e.zone) if e.zone
 
-    return e if return_bag
     e.to_hash
   end
 
