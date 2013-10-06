@@ -17,7 +17,8 @@ describe "DateTime#strptime" do
   end
 
   it "parses seconds and timezone correctly" do
-    DateTime.strptime("0 +0100", "%s %z").should == DateTime.civil(1970, 1, 1, 1, 0, 0, '+1')
+    DateTime.strptime("0 +0100", "%s %z").to_s.should == DateTime.civil(1970, 1, 1, 1, 0, 0, '+1').to_s
+    DateTime.strptime("0 +0100", "%s %z").strftime("%s %z").should == "0 +0100"
   end
 
 end
