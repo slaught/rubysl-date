@@ -4,6 +4,7 @@ env:
   - RUBYLIB=
 script: mspec spec
 rvm:
+  - ruby-head
   - 2.0.0
   - rbx-2.2.1
 matrix:
