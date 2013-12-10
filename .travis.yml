@@ -9,6 +9,8 @@ rvm:
   - rbx-2.2.1
 matrix:
   exclude:
+    - rvm: ruby-head
+      env: RUBYLIB=lib
     - rvm: 2.0.0
       env: RUBYLIB=lib
     - rvm: rbx-2.2.1
