@@ -718,9 +718,9 @@ class Date
 		   (
 		     (?:gmt|utc?)?[-+]\d+(?:[,.:]\d+(?::\d+)?)?
 		   |
-		     (?-i:[[:alpha:].\\s]+)(?:standard|daylight)\\stime\\b
+		     (?-i:[[:alpha:].\s]+)(?:standard|daylight)\stime\b
 		   |
-		     (?-i:[[:alpha:]]+)(?:\\sdst)?\\b
+		     (?-i:[[:alpha:]]+)(?:\sdst)?\b
 		   )
 		 )?
 		/ix,
