@@ -6,12 +6,12 @@ script: mspec spec
 rvm:
   - ruby-head
   - 2.0.0
-  - rbx-2.2.1
+  - rbx-2
 matrix:
   exclude:
     - rvm: ruby-head
       env: RUBYLIB=lib
     - rvm: 2.0.0
       env: RUBYLIB=lib
-    - rvm: rbx-2.2.1
+    - rvm: rbx-2
       env: RUBYLIB=
