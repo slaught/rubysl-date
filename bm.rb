@@ -1,6 +1,6 @@
-$: << '/home/cslaughter/build/rubinius-2.2.3/benchmark/lib'
+# $: << '/home/cslaughter/build/rubinius-2.2.3/benchmark/lib'
 require 'benchmark'
-require 'benchmark/ips'
+# require 'benchmark/ips'
 
 $:.unshift 'lib'
 require 'date'
