@@ -1496,11 +1496,13 @@ class Date
   def to_s() format('%.4d-%02d-%02d', year, mon, mday) end # 4p
 
   # Dump to Marshal format.
-  def marshal_dump() [@ajd, @of, @sg] end
+  def marshal_dump()
+    [0, @ajd, 0, 0, @of, @sg]
+  end
 
   # Load from Marshal format.
   def marshal_load(a)
-    @ajd, @of, @sg, = a
+    _, @ajd, _, _, @of, @sg, = a
     @__ca__ = {}
   end
 
