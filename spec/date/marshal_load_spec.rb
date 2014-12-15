@@ -13,8 +13,8 @@ describe "Date#marshal_load" do
       @date.should == @loaded
     end
 
-    it "dumps @ajd within some bounds" do
-      @date.ajd.should be_close(@dumped[1], 1)
+    it "loads @ajd within some bounds" do
+      @loaded.ajd.should be_close(@dumped[1], 1)
     end
   end
 end
