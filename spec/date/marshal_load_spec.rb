@@ -9,7 +9,7 @@ describe "Date#marshal_load" do
       @loaded.marshal_load(@dumped)
     end
 
-    it "hydrates" do
+    it "returns the loaded date" do
       @date.should == @loaded
     end
 
