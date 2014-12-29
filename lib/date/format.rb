@@ -559,8 +559,8 @@ class Date
 	  e._cent ||= if val >= 69 then 19 else 20 end
 	when 'Z', /\A:{0,3}z/
 	  return unless str.sub!(/\A((?:gmt|utc?)?[-+]\d+(?:[,.:]\d+(?::\d+)?)?
-				    |(?-i:[[:alpha:].\\s]+)(?:standard|daylight)\\stime\\b
-				    |(?-i:[[:alpha:]]+)(?:\\sdst)?\\b
+				    |(?-i:[[:alpha:].\s]+)(?:standard|daylight)\stime\b
+				    |(?-i:[[:alpha:]]+)(?:\sdst)?\b
 				    )/ix, '')
 	  val = $1
 	  e.zone = val
